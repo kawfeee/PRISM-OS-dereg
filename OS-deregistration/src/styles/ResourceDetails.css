@@ -1,0 +1,353 @@
+.resource-details-section {
+  background-color: #F9FAFB;
+  padding: 24px;
+  border-radius: 8px;
+  margin-bottom: -27px;
+  margin-top: -25px;
+  margin-left: -24px;
+}
+
+.resource-details-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #202224;
+  margin: 0 0 20px 0;
+}
+
+.resource-details-form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: -1px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  display: block;
+  font-size: 14px;
+  color: #111827;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+/* Recommended label styling per request */
+.recommended-label {
+  font-size: 16px;
+  font-weight: 700;
+  color: #202224;
+}
+
+.required {
+  color: #ef4444;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.form-input {
+  width: 100%;
+  height: 27px;
+  padding: 10px 12px 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #1f2937;
+  background-color: #F3F3F3;
+  cursor: pointer;
+  outline: none;
+}
+
+.form-input:focus {
+  border-color: #3b82f6;
+}
+
+.input-icon {
+  position: absolute;
+  right: 12px;
+  color: #6b7280;
+  font-size: 20px;
+  pointer-events: none;
+}
+
+/* Hide the icon element when a select is present to avoid duplicate arrows */
+.input-wrapper .form-select + .input-icon {
+  display: none;
+}
+
+/* Date field: hide existing icon and show calendar2.svg */
+.date-field .input-wrapper .input-icon {
+  display: none;
+}
+
+.date-field .input-wrapper::after {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url('../assets/svg/calender2.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: none;
+}
+
+/* Select styling to match inputs and show custom arrow */
+.form-select {
+  width: 100%;
+  height: 48px;
+  padding: 10px 36px 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #1f2937;
+  background-color: #F3F3F3;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  background-image: url('../assets/svg/arrow-down.svg');
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 10px 6px;
+}
+
+.form-select:focus {
+  border-color: #3b82f6;
+  outline: none;
+}
+
+/* Projects field spans 2 columns */
+.projects-field {
+  grid-column: span 2;
+}
+
+/* Skillset field spans all 3 columns */
+.skillset-field {
+  grid-column: span 3;
+}
+
+/* Date of Relieving field spans 1 column */
+.date-relieving-field {
+  grid-column: span 1;
+}
+
+/* Only Date of Relieving input should have white background */
+.date-relieving-field .form-input {
+  background-color: #FFFFFF;
+}
+
+/* Make Name of the OS Resource select background white */
+.name-field .form-select {
+  background-color: #FFFFFF;
+}
+
+/* Full width field for new radio sections */
+.full-width-field {
+  grid-column: span 3;
+}
+
+/* Field sublabel styling */
+.field-sublabel {
+  font-weight: 400;
+  color: #6b7280;
+}
+
+/* Radio group - horizontal layout */
+.radio-group-horizontal {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin-top: 8px;
+}
+
+/* Radio group - grid layout for Reason section */
+.radio-group-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+  margin-top: 8px;
+}
+
+/* Rating section */
+.rating-section {
+  margin-top: 20px;
+}
+
+.rating-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 13px;
+}
+
+/* Textarea styling */
+.form-textarea {
+  width: 100%;
+  height: 20px;
+  padding: 28px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #1f2937;
+  background-color: #FFFFFF;
+  font-family: inherit;
+  resize: none;
+  outline: none;
+  height: 90px;
+  box-sizing: border-box;
+}
+
+.form-textarea:focus {
+  border-color: #3b82f6;
+}
+
+.form-textarea::placeholder {
+  line-height: 20px;
+}
+
+/* Full width sections for radio buttons */
+.full-width {
+  grid-column: span 3;
+}
+
+/* Radio section styling */
+.radio-section {
+  margin-top: 8px;
+}
+
+.radio-section-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1f2937;
+  margin-bottom: 12px;
+}
+
+/* Radio group - horizontal layout */
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+}
+
+/* Radio option styling (custom SVG icons) */
+.radio-option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 8px;
+  position: relative;
+  padding-left: 28px; /* space for custom icon */
+}
+
+/* Keep the native input for accessibility but hide native appearance */
+.radio-option input[type="radio"] {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  opacity: 0; /* visually hidden but still focusable/clickable */
+  cursor: pointer;
+}
+
+/* The visible icon is rendered via the label's ::before pseudo-element */
+.radio-option .radio-label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url('../assets/svg/uncheck.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* When the input is checked, switch the icon */
+.radio-option input[type="radio"]:checked + .radio-label::before,
+.radio-option input[type="radio"]:checked ~ .radio-label::before {
+  background-image: url('../assets/svg/check.svg') !important;
+}
+
+/* Fallback visible border/background to ensure icon area is visible even if SVG fails to load */
+.radio-option .radio-label::before {
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+/* Default label appearance for radio options (unchecked) */
+.radio-label {
+  font-size: 14px;
+  color: #6E6E6E;
+  font-weight: 400;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Checked state: make the label text bold and darker */
+.radio-option input[type="radio"]:checked + .radio-label,
+.radio-option input[type="radio"]:checked ~ .radio-label {
+  color: #202224;
+  font-weight: 700;
+}
+
+/* Rating section styling */
+.rating-section {
+  margin-top: 23px;
+}
+
+.rating-section-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1f2937;
+  margin-bottom: 16px;
+}
+
+.rating-subtitle {
+  font-size: 13px;
+  font-weight: 400;
+  color: #6b7280;
+}
+
+/* Rating row - each category with its options */
+.rating-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  gap: 32px;
+}
+
+.rating-row:last-child {
+  margin-bottom: 0;
+}
+
+.rating-category {
+  font-size: 14px;
+  font-weight: 400;
+  color: #1f2937;
+  min-width: 200px;
+  flex-shrink: 0;
+}
+
+.rating-row .radio-group {
+  flex: 1;
+  gap: 32px;
+}

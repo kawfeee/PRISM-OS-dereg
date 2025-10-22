@@ -1,0 +1,124 @@
+.required-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  margin: 0;
+  padding: 16px 32px;
+}
+
+.clipboard-icon {
+  font-size: 24px;
+  color: #333333;
+}
+
+.required-text {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333333;
+  font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+}
+
+.form-content {
+  padding: 0 32px 32px 32px;
+}
+
+.form-field {
+  margin-bottom: 24px;
+}
+
+.field-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+  font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+}
+
+.required-asterisk {
+  color: #ff0000;
+}
+
+.field-sublabel {
+  font-weight: 400;
+  color: #666666;
+}
+
+.date-input-wrapper {
+  position: relative;
+  max-width: 380px;
+}
+
+.date-input {
+  width: 100%;
+  padding: 10px 40px 10px 12px;
+  font-size: 14px;
+  color: #1a1a1a;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  background-color: #ffffff;
+  font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+  outline: none;
+}
+
+.date-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.calendar-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.radio-group-horizontal {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.radio-group-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px 24px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.radio-option input[type="radio"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  margin: 0;
+  accent-color: #1a73e8;
+}
+
+.radio-label {
+  font-size: 14px;
+  color: #4b5563;
+  font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.rating-section {
+  margin-top: 16px;
+}
+
+.rating-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+  font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+}
