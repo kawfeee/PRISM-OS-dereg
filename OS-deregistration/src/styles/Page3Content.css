@@ -1,0 +1,161 @@
+/* Page 3 Content Styles */
+
+.page3-content-wrapper {
+  margin-top: 24px;
+}
+
+/* Action Buttons Container */
+.page3-action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: -22px;
+  margin-bottom: 41px;
+}
+
+.page3-approve-button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.page3-approve-button:hover {
+  opacity: 0.8;
+}
+
+.page3-button-icon {
+  display: block;
+  height: 38px;
+  width: auto;
+}
+
+/* Transfer Workflow Section */
+.page3-transfer-workflow {
+  background-color: #EFF6FF;
+  padding: 16px 32px;
+  margin-left: -24px;
+  margin-right: -24px;
+  height: 14px;
+  width: 1408px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page3-transfer-workflow:hover {
+  background-color: #DBEAFE;
+}
+
+.page3-transfer-workflow-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.page3-transfer-workflow-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.page3-transfer-workflow-text {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a1a;
+  font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+  margin-top: -2px;
+}
+
+.page3-transfer-workflow-arrow {
+  font-size: 18px !important;
+  color: #1a1a1a;
+}
+
+/* View Policies Section */
+.page3-view-policies {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding-bottom: 24px;
+  margin-top: 65px;
+  transition: opacity 0.2s ease;
+}
+
+.page3-view-policies:hover {
+  opacity: 0.7;
+}
+
+.page3-view-policies-icon {
+  font-size: 20px !important;
+  color: #6B7280;
+}
+
+.page3-view-policies-text {
+  font-size: 14px;
+  color: #6B7280;
+  font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+}
+
+/* Page 3 Comment Section - Independent styling */
+.page3-comment-section {
+  background-color: #F9FAFB;
+  padding: 24px 0;
+  margin-top: -57px;
+}
+
+.page3-comment-field {
+  margin-bottom: 24px;
+}
+
+.page3-comment-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+  font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+}
+
+.page3-comment-textarea {
+  width: 100%;
+  height: 90px;
+  padding: 28px 12px;
+  font-size: 14px;
+  color: #1a1a1a;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: #ffffff;
+  font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+  resize: none;
+  outline: none;
+  min-height: 80px;
+  box-sizing: border-box;
+}
+
+.page3-comment-textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.page3-comment-textarea::placeholder {
+  color: #000000;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* Override name field background color for Page 3 only */
+.page3-main-content .name-field .form-select {
+  background-color: #F3F3F3 !important;
+}
+
+/* Override radio button checked icon for Page 3 only - use gray-check.svg */
+.page3-main-content .radio-option input[type="radio"]:checked + .radio-label::before,
+.page3-main-content .radio-option input[type="radio"]:checked ~ .radio-label::before {
+  background-image: url('../assets/svg/gray-check.svg') !important;
+}
