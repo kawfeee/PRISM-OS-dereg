@@ -73,6 +73,8 @@
   top: 50%;
   transform: translateY(-50%);
   pointer-events: none;
+  width: 16px;
+  height: 16px;
 }
 
 .radio-group-horizontal {

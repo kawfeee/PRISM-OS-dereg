@@ -29,7 +29,7 @@ const Navbar = () => {
           <input type="text" placeholder="search" className="navbar-search" />
         </div>
         <span className="navbar-icon">
-          <img src={CalendarIcon} alt="Calendar" width="22" height="20" />
+          <img src={CalendarIcon} alt="Calendar" width="18" height="16" />
         </span>
         <span className="navbar-icon">
           <img src={MarkerIcon} alt="Marker" width="24" height="24" />
