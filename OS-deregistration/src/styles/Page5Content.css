@@ -1,0 +1,238 @@
+/* Page 5 Content Styles */
+
+.page5-content-wrapper {
+  margin-top: 24px;
+}
+
+/* Corp Security Section */
+.page5-corp-security-section {
+  background-color: #F9FAFB;
+  padding: 24px;
+  border-radius: 8px;
+  margin-bottom: -37px;
+  margin-top: -62px;
+  width: 55%;
+  margin-left: -23px;
+}
+
+.page5-section-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #202224;
+  margin: 0 0 20px 0;
+  font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+}
+
+.page5-security-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  align-items: start;
+  margin-bottom: 20px;
+}
+
+.page5-security-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.page5-security-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 4px;
+  font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+}
+
+.page5-radio-group {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+/* Ensure radio labels don't wrap and radios are aligned */
+.page5-security-item .page5-radio-group {
+  justify-content: flex-start;
+}
+
+.page5-security-item .radio-option {
+  white-space: nowrap;
+}
+
+.page5-security-item .radio-label {
+  font-size: 13px;
+}
+
+/* Responsive: stack into 2 columns on medium screens */
+@media (max-width: 900px) {
+  .page5-security-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .page5-security-grid {
+    grid-template-columns: 1fr;
+  }
+  .page5-security-item {
+    width: 100%;
+  }
+}
+
+/* Action Buttons Container */
+.page5-action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: -7px;
+  margin-bottom: 41px;
+}
+
+.page5-approve-button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.page5-approve-button:hover {
+  opacity: 0.8;
+}
+
+.page5-button-icon {
+  display: block;
+  height: 38px;
+  width: auto;
+}
+
+/* Transfer Workflow Section */
+.page5-transfer-workflow {
+  background-color: #EFF6FF;
+  padding: 16px 32px;
+  margin-left: -24px;
+  margin-right: -24px;
+  height: 14px;
+  width: 1408px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page5-transfer-workflow:hover {
+  background-color: #DBEAFE;
+}
+
+.page5-transfer-workflow-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.page5-transfer-workflow-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.page5-transfer-workflow-text {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a1a;
+  font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+  margin-top: -2px;
+}
+
+.page5-transfer-workflow-arrow {
+  font-size: 18px !important;
+  color: #1a1a1a;
+}
+
+/* View Policies Section */
+.page5-view-policies {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding-bottom: 24px;
+  margin-top: 65px;
+  transition: opacity 0.2s ease;
+}
+
+.page5-view-policies:hover {
+  opacity: 0.7;
+}
+
+.page5-view-policies-icon {
+  font-size: 20px !important;
+  color: #6B7280;
+}
+
+.page5-view-policies-text {
+  font-size: 14px;
+  color: #6B7280;
+  font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+}
+
+/* Page 5 Comment Section - Independent styling */
+.page5-comment-section {
+  background-color: #F9FAFB;
+  padding: 24px 0;
+  margin-top: 24px;
+}
+
+.page5-comment-field {
+  margin-bottom: 24px;
+}
+
+.page5-comment-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+  font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+}
+
+.page5-comment-textarea {
+  width: 100%;
+  height: 90px;
+  padding: 28px 12px;
+  font-size: 14px;
+  color: #1a1a1a;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: #ffffff;
+  font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+  resize: none;
+  outline: none;
+  min-height: 80px;
+  box-sizing: border-box;
+}
+
+.page5-comment-textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.page5-comment-textarea::placeholder {
+  color: #000000;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* Override name field background color for Page 5 only */
+.page5-main-content .name-field .form-select {
+  background-color: #F3F3F3 !important;
+}
+
+/* Override radio button checked icon for Page 5 only - use gray-check.svg */
+.page5-main-content .radio-option input[type="radio"]:checked + .radio-label::before,
+.page5-main-content .radio-option input[type="radio"]:checked ~ .radio-label::before {
+  background-image: url('../assets/svg/gray-check.svg') !important;
+}
