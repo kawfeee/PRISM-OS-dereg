@@ -1,0 +1,97 @@
+/* Page 8 Content Styles - minimal and safe (no fixed widths) */
+
+.page8-content-wrapper {
+  margin-top: 8px;
+}
+
+.page8-rate-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #202224;
+  margin: 0 0 12px 0;
+}
+
+.page8-rate-subtitle {
+  font-size: 13px;
+  font-weight: 400;
+  color: #6b7280;
+}
+
+.page8-rating-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.page8-rating-label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #1f2937;
+}
+
+.page8-rating-options {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: nowrap;
+}
+
+/* Checkbox */
+.page8-ghr-confirmation {
+  margin-top: 16px;
+}
+
+.page8-checkbox-container {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+}
+
+.page8-checkbox-input {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  opacity: 0;
+}
+
+.page8-checkbox-checkmark {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  border: 2px solid #3b82f6;
+  border-radius: 3px;
+  background: #fff;
+}
+
+.page8-checkbox-input:checked ~ .page8-checkbox-checkmark {
+  background: #3b82f6;
+}
+
+.page8-checkbox-input:checked ~ .page8-checkbox-checkmark::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 1px;
+  width: 4px;
+  height: 9px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.page8-checkbox-label {
+  font-size: 14px;
+  color: #1f2937;
+}

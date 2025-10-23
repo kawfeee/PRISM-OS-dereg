@@ -4,6 +4,7 @@ import Header from "./Header";
 import EmployeeProfile from "./EmployeeProfile";
 import RequiredInfo from "./RequiredInfo";
 import ResourceDetailsPartial from "./ResourceDetailsPartial";
+import Page8Content from "./Page8Content";
 
 const Page8 = () => {
   // Event handlers for all clickable components
@@ -93,9 +94,9 @@ const Page8 = () => {
 
       <RequiredInfo onClick={handleRequiredInfoClick} />
 
-      <div className="main-content" style={{ backgroundColor: '#F9FAFB', minHeight: '100vh', padding: '24px', maxWidth: '1500px', marginLeft: '24px', marginRight: '24px', borderRadius: '10px' }}>
+      <div className="main-content page8-main-content" style={{ backgroundColor: '#F9FAFB', padding: '24px', maxWidth: '1500px', marginLeft: '24px', marginRight: '24px', borderRadius: '10px' }}>
         <ResourceDetailsPartial />
-        {/* Additional content for Page 8 will go here */}
+        <Page8Content />
       </div>
     </div>
   );
